@@ -1,0 +1,271 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(to right, #37a4a4, #ffffff);
+  color: #0e7880;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Full-width Navbar */
+.navbar {
+  width: 100%;
+  background: #222;
+  color: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar Logo */
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Navbar Links */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar ul li {
+  list-style: none;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+  background: #ffcc00;
+  color: #222;
+}
+
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 5px 15px;
+  border-radius: 25px;
+  margin-left: auto; /* Pushes it to the right */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease-in-out;
+}
+
+/* Search Input */
+.search-bar input {
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 25px;
+  outline: none;
+  width: 250px; /* Increased length */
+  height: 35px;  /* Reduced height */
+  transition: width 0.3s ease-in-out;
+}
+
+/* Search Input on Focus */
+.search-bar input:focus {
+  width: 300px; /* Expands on focus */
+  box-shadow: 0 0 8px rgba(100, 108, 255, 0.5);
+}
+
+/* Search Button */
+.search-bar button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 18px;
+  color: #0e7880;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+
+
+
+/* Centering the Form */
+.form-container {
+  width: 90%;
+  max-width: 500px;
+  background: white;
+  padding: 50px 40px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  text-align: center;
+  margin-top: 120px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Input Fields */
+input, textarea {
+  width: 100%;
+  padding: 16px;
+  font-size: 17px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin: 10px 0;
+  transition: 0.3s;
+}
+
+input:focus, textarea:focus {
+  border-color: #494eb8;
+  outline: none;
+  box-shadow: 0 0 5px rgba(100, 108, 255, 0.5);
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 5px 15px;
+  border-radius: 25px;
+  margin-left: 20px; /* Adjust left margin */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease-in-out;
+}
+
+.search-bar input {
+  border: none;
+  padding: 8px 12px;
+  font-size: 16px;
+  outline: none;
+  flex: 1;
+}
+
+.search-bar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  font-size: 18px;
+  color: #555;
+}
+
+
+
+
+/* Buttons */
+button {
+  width: 100%;
+  background: #2d329f;
+  color: rgb(123, 147, 36);
+  padding: 14px;
+  font-size: 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #7ec9ca;
+}
+/* Login Page Button */
+button[type="submit"] {
+  color: #5ab514c1;  /* Change text color */
+  font-size: 18px;
+  font-weight: bold;
+  background: white;  /* Background color */
+  border: 2px solid #806553af;  /* Orange border */
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Hover Effect */
+button[type="submit"]:hover {
+  background: #f908c1d7;  /* Change background on hover */
+  color: white;  /* Text color changes to white */
+  border: 2px solid #1ec6cf;
+}
+
+/* Signup Link */
+.signup-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.signup-link a {
+  color: #646cff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-link a:hover {
+  color: #ff6600;
+  text-decoration: underline;
+}
+
+/* Responsive Navbar for Mobile */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 0;
+    gap: 10px;
+  }
+}
+
+
+/* Image Upload Input */
+.image-upload {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Image Preview */
+.image-preview {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.image-preview img {
+  max-width: 100%;
+  max-height: 200px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,17 @@
+# Environment files (never commit secrets)
+.env
+.env.local
+.env.*.local
+
+# Dependencies
+node_modules
+
+# Build output
+dist
+dist-ssr
+
+# OS and editor
+.DS_Store
+.vscode
+.idea
+*.log
